@@ -1,0 +1,1436 @@
+contrib/nxp/src/ee3_s32sdk_osif.c:130:0: information: Skipping configuration 'OSEE_SYSTEM_TIMER' since the value of 'OSEE_SYSTEM_TIMER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ (void)GetCounterValue(OSEE_SYSTEM_TIMER, &ticks);
+^
+pkg/arch/aarch64/ee_aarch64_boot.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 23 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/aarch64/ee_hal.h:120:3: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+  OSEE_AARCH64_MRS(vcore_id,mpidr_el1);
+  ^
+pkg/arch/aarch64/ee_aarch64_gtimer.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 24 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/aarch64/ee_aarch64_int.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 26 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/aarch64/ee_aarch64_int.c:148:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(OsEE_bool, OS_CODE) osEE_cpu_startos(void)
+^
+pkg/arch/aarch64/examples/aarch64_jailhouse_dynamic_api/code.c:185:5: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+    OSEE_BREAK_POINT();
+    ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_fatfs/main.c:139:6: style: Variable 'res' is reassigned a value before the old one has been used. [redundantAssignment]
+ res = f_mkdir("test");
+     ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_fatfs/main.c:134:6: note: res is assigned
+ res = f_mkfs("", FM_ANY, 0, work, sizeof work);
+     ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_fatfs/main.c:139:6: note: res is overwritten
+ res = f_mkdir("test");
+     ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_fatfs/main.c:140:6: style: Variable 'res' is reassigned a value before the old one has been used. [redundantAssignment]
+ res = f_open(&Fil, "test/erika.txt", FA_WRITE | FA_OPEN_APPEND);
+     ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_fatfs/main.c:139:6: note: res is assigned
+ res = f_mkdir("test");
+     ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_fatfs/main.c:140:6: note: res is overwritten
+ res = f_open(&Fil, "test/erika.txt", FA_WRITE | FA_OPEN_APPEND);
+     ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_osek/code.c:185:5: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+    OSEE_BREAK_POINT();
+    ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX1_uart/uart-driver.c:249:21: warning: Logical disjunction always evaluates to true: baudrate >= 0 || baudrate < 3. [incorrectLogicOperator]
+  if( baudrate >= 0 || baudrate < MAX_UART_BAUD)
+                    ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX1_uart/uart-driver.c:224:16: style:inconclusive: Function 'UART_init' argument 2 names different: declaration 'baudrate' definition 'unused'. [funcArgNamesDifferent]
+ __attribute_((unused))
+               ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX1_uart/uart-driver.h:74:50: note: Function 'UART_init' argument 2 names different: declaration 'baudrate' definition 'unused'.
+uint8_t UART_init( UART_id_t id, UART_baudrate_t baudrate);
+                                                 ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX1_uart/uart-driver.c:224:16: note: Function 'UART_init' argument 2 names different: declaration 'baudrate' definition 'unused'.
+ __attribute_((unused))
+               ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX2_uart/uart-driver.c:251:21: warning: Logical disjunction always evaluates to true: baudrate >= 0 || baudrate < 3. [incorrectLogicOperator]
+  if( baudrate >= 0 || baudrate < MAX_UART_BAUD)
+                    ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX2_uart/uart-driver.c:226:17: style:inconclusive: Function 'UART_init' argument 2 names different: declaration 'baudrate' definition 'unused'. [funcArgNamesDifferent]
+  __attribute_((unused))
+                ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX2_uart/uart-driver.h:76:50: note: Function 'UART_init' argument 2 names different: declaration 'baudrate' definition 'unused'.
+uint8_t UART_init( UART_id_t id, UART_baudrate_t baudrate);
+                                                 ^
+pkg/arch/aarch64/examples/aarch64_jailhouse_tegraX2_uart/uart-driver.c:226:17: note: Function 'UART_init' argument 2 names different: declaration 'baudrate' definition 'unused'.
+  __attribute_((unused))
+                ^
+pkg/arch/avr8/ee_atmega_intvect.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 149 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/avr8/ee_hal_internal.h:186:3: error: There is an unknown macro here somewhere. Configuration is required. If P2VAR is a macro then please configure it. [unknownMacro]
+  P2VAR(OsEE_TDB, AUTOMATIC, OS_APPL_CONST) p_from,
+  ^
+pkg/arch/avr8/ee_atmega_system_timer.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/avr8/ee_atmega_timer0ctc.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/avr8/ee_atmega_timer0ctc.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/avr8/ee_atmega_timer1ctc.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/avr8/ee_atmega_timer1ctc.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/avr8/ee_avr8_irqstub.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/avr8/ee_avr8_utils.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/avr8/examples/arduino_full_1/code.cpp:177:5: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+    OSEE_BREAK_POINT();
+    ^
+pkg/arch/avr8/examples/arduino_full_2/code.cpp:171:5: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+    OSEE_BREAK_POINT();
+    ^
+pkg/arch/cortex-m/ee_cortex_m_change_context.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/cortex-m/ee_hal_internal.h:257:8: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+extern FUNC(void, OS_CODE) osEE_cortex_m_trigger_pend_sv( void );
+       ^
+pkg/arch/cortex-m/ee_cortex_m_irqstub.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/cortex-m/ee_cortex_m_system.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 36 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/cortex-m/ee_cortex_m_system_timer.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 22 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/cortex-m/ee_cortex_m_utils.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/cortex-m/ee_s32k1xx_intvect.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 532 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_basic_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_basic_2/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_full_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_full_2/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_full_3/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_isr_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_isr_2/hal.h:65:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_isr_2/code.c:117:3: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+  OSEE_BREAK_POINT();
+  ^
+pkg/arch/cortex-m/examples/s32k144evb_q100_isr_2/hal.c:389:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay(
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_lpuart_echo/hal.h:72:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_oo_event/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_oo_resource/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k144evb_q100_oo_task/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_basic_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_basic_2/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_full_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_full_2/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_full_3/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_isr_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_oo_event/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_oo_resource/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-m/examples/s32k148evb_q144_q176_oo_task/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:110:3: error: There is an unknown macro here somewhere. Configuration is required. If CONSTP2VAR is a macro then please configure it. [unknownMacro]
+  CONSTP2VAR(OsEE_cortex_r_hnd_type, AUTOMATIC, OS_APPL_DATA) p_hnd,
+  ^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:78:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  osEE_cortex_r_int_vectors[OSEE_CORTEX_R_VIM_CHANNELS];
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:81:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  osEE_cortex_r_int_channel[OSEE_CORTEX_R_VIM_CHANNELS];
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:93:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+HwiP_DispatchEntry HwiP_dispatchTable[OSEE_CORTEX_R_VIM_CHANNELS];
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:117:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  } else if (channel_id >= OSEE_CORTEX_R_VIM_CHANNELS) {
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:146:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  DebugP_assert(request < OSEE_CORTEX_R_VIM_CHANNELS);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:147:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  DebugP_assert(channel < OSEE_CORTEX_R_VIM_CHANNELS);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:432:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  params->priority = OSEE_CORTEX_R_VIM_CHANNELS;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:459:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (params->priority < OSEE_CORTEX_R_VIM_CHANNELS) {
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:504:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      for (i = 0U; i < OSEE_CORTEX_R_VIM_CHANNELS; ++i) {
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:596:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  regVal = OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_CHANCTRL(chRegId));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:601:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                   OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_CHANCTRL(chRegId)),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:677:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (channel < OSEE_CORTEX_R_VIM_CHANNELS) {
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:737:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (channel < OSEE_CORTEX_R_VIM_CHANNELS) {
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:768:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_CHANNELS' since the value of 'OSEE_CORTEX_R_VIM_CHANNELS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (channel < OSEE_CORTEX_R_VIM_CHANNELS) {
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:292:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET0) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:294:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET1) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:296:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET2) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:298:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET3) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:513:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                          OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_FIRQPR0),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:517:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                          OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_FIRQPR1),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:521:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                        OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_FIRQPR2),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:525:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                        OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_FIRQPR3),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:529:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_INTREQ0) = (0xFFFFFFFFU);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:530:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_INTREQ1) = (0xFFFFFFFFU);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:531:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_INTREQ2) = (0xFFFFFFFFU);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:532:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_INTREQ3) = (0xFFFFFFFFU);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:535:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET0) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:537:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET1) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:539:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET2) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:541:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET3) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:546:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                        OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_CAPEVT),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:566:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_INTREQ0)[chRegIndex] =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:596:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  regVal = OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_CHANCTRL(chRegId));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:601:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                   OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_CHANCTRL(chRegId)),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:635:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_WAKEMASKSET0) | chanRegVal;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:637:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                        OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_WAKEMASKSET0),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:641:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_WAKEMASKSET1) | chanRegVal;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:643:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                        OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_WAKEMASKSET1),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:647:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_WAKEMASKSET2) | chanRegVal;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:649:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                        OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_WAKEMASKSET2),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:653:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_WAKEMASKSET3) | chanRegVal;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:655:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                        OSEE_CORTEX_R_VIM_ADDR(OSEE_CORTEX_R_VIM_WAKEMASKSET3),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:700:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OsEE_reg        regVal = OSEE_CORTEX_R_VIM_REG(regFIRQPRoff);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:709:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        OSEE_CORTEX_R_VIM_ADDR(regFIRQPRoff),
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:712:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(regFIRQPRoff + delta_from_firqpr_to_set)
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:739:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      enabled = ((OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET3) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:742:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      enabled = ((OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET2) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:745:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      enabled = ((OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET1) &
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:748:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      enabled = ((OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET0) &
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:770:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR3) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:773:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR2) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:776:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR1) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:779:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR0) =
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:803:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    (OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_IRQINDEX) & 0xFFU);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:808:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET0);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:810:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET1);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:812:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET2);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:814:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET3);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:841:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      chClearMask &= (~OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_FIRQPR0));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:842:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR0) = chClearMask;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:849:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        0xFFFFFFFFU && (~OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_FIRQPR1));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:850:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR1) = chClearMask;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:852:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      chClearMask &= (~OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_FIRQPR1));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:853:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR1) = chClearMask;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:860:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        0xFFFFFFFFU && (~OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_FIRQPR2));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:861:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR2) = chClearMask;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:863:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      chClearMask &= (~OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_FIRQPR2));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:864:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR2) = chClearMask;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:871:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        0xFFFFFFFFU && (~OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_FIRQPR3));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:872:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR3) = chClearMask;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:874:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      chClearMask &= (~OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_FIRQPR3));
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:875:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKCLR3) = chClearMask;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:944:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET0) = prev_REQMASKSET0;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:945:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET1) = prev_REQMASKSET1;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:946:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET2) = prev_REQMASKSET2;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_mmwave_osal.c:947:0: information: Skipping configuration 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' since the value of 'OSEE_CORTEX_R_VIM_MODULE_BASEADDR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      OSEE_CORTEX_R_VIM_REG(OSEE_CORTEX_R_VIM_REQMASKSET3) = prev_REQMASKSET3;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:278:0: information: Skipping configuration 'OSEE_HAS_SYSTEM_TIMER;OSEE_TI_RTI_COMP_INT_OFFSET' since the value of 'OSEE_TI_RTI_COMP_INT_OFFSET' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    (p_cdb->p_ccb->p_curr->hdb.isr2_src - OSEE_TI_RTI_COMP_INT_OFFSET);
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:140:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTIGCTRL &=
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:160:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTIINTFLAG = 0x0007000FU;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:165:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTITBCTRL = 0U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:168:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTIFRC0  = 0U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:169:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTIUC0   = 0U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:170:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTIFRC1  = 0U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:171:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTIUC1   = 0U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:174:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTICPUC0 = 1U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:175:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTICPUC1 = 1U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:180:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTICOMPCTRL = 0x010100U;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:184:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TI_RTI_P->RTIGCTRL |= (
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:199:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      ret_value = OSEE_TI_RTI_P->RTIFRC1;
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:203:0: information: Skipping configuration 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' since the value of 'OSEE_TI_RTI_MODULE_BASE_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      ret_value = OSEE_TI_RTI_P->RTIFRC0;
+^
+pkg/arch/cortex-r/ti_awr16xx/examples/ti_awr1642_full/code.c:126:5: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+    OSEE_BREAK_POINT();
+    ^
+pkg/arch/cortex-r/xilinx_zynq_ultrascale+/ee_cortex_r_c_start.c:322:3: error: There is an unknown macro here somewhere. Configuration is required. If P2VAR is a macro then please configure it. [unknownMacro]
+  P2VAR(OsEE_TDB, AUTOMATIC, OS_APPL_CONST) p_from,
+  ^
+pkg/arch/cortex-r/xilinx_zynq_ultrascale+/ee_cortex_r_c_start.c:171:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(StatusType, OS_CODE)
+^
+pkg/arch/dspic33_pic24/ee_dspic33_pic24_irqstub.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33_pic24_irqstub.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33_pic24_system.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33_pic24_system.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33_pic24_system_timer.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 16 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33_pic24_system_timer.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33ev_ic.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33ev_ic.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33ev_system.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 188 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/dspic33_pic24/ee_dspic33ev_system.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_basic_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_basic_2/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_full_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_full_2/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_isr_1/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_isr_all/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_oo_event/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_oo_resource/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_oo_task/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/dspic33_pic24/examples/dspic33ev_sk_splim/hal.h:63:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/kalray_k1/ee_hal_init.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 23 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:422:18: style:inconclusive: Function 'osEE_hal_sync_barrier' argument 1 names different: declaration 'p_bar' definition 'p_barrier'. [funcArgNamesDifferent]
+  OsEE_barrier * p_barrier, OsEE_reg const volatile * p_wait_mask,
+                 ^
+pkg/arch/kalray_k1/ee_hal_internal.h:202:43: note: Function 'osEE_hal_sync_barrier' argument 1 names different: declaration 'p_bar' definition 'p_barrier'.
+void osEE_hal_sync_barrier(OsEE_barrier * p_bar,
+                                          ^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:422:18: note: Function 'osEE_hal_sync_barrier' argument 1 names different: declaration 'p_bar' definition 'p_barrier'.
+  OsEE_barrier * p_barrier, OsEE_reg const volatile * p_wait_mask,
+                 ^
+pkg/arch/kalray_k1/ee_k1_irq.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 47 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/kalray_k1/ee_k1_irq.c:593:31: style:inconclusive: Function 'osEE_os_it_handler' argument 1 names different: declaration 'nb' definition 'ev_src'. [funcArgNamesDifferent]
+void osEE_os_it_handler ( int ev_src, __k1_vcontext_t *ctx ) {
+                              ^
+pkg/arch/kalray_k1/ee_k1_irq.h:92:37: note: Function 'osEE_os_it_handler' argument 1 names different: declaration 'nb' definition 'ev_src'.
+extern void osEE_os_it_handler (int nb, __k1_vcontext_t *ctx);
+                                    ^
+pkg/arch/kalray_k1/ee_k1_irq.c:593:31: note: Function 'osEE_os_it_handler' argument 1 names different: declaration 'nb' definition 'ev_src'.
+void osEE_os_it_handler ( int ev_src, __k1_vcontext_t *ctx ) {
+                              ^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.c:154:47: style:inconclusive: Function 'ReadyJob' argument 2 names different: declaration 'ActivatedAttendeeMask' definition 'JobAttendeeMask'. [funcArgNamesDifferent]
+StatusType ReadyJob ( JobType JobId, CoreMask JobAttendeeMask ) {
+                                              ^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.h:170:47: note: Function 'ReadyJob' argument 2 names different: declaration 'ActivatedAttendeeMask' definition 'JobAttendeeMask'.
+StatusType ReadyJob ( JobType JobId, CoreMask ActivatedAttendeeMask );
+                                              ^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.c:154:47: note: Function 'ReadyJob' argument 2 names different: declaration 'ActivatedAttendeeMask' definition 'JobAttendeeMask'.
+StatusType ReadyJob ( JobType JobId, CoreMask JobAttendeeMask ) {
+                                              ^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.c:174:50: style:inconclusive: Function 'ActivateJob' argument 2 names different: declaration 'ActivatedAttendeeMask' definition 'JobAttendeeMask'. [funcArgNamesDifferent]
+StatusType ActivateJob ( JobType JobId, CoreMask JobAttendeeMask ) {
+                                                 ^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.h:172:50: note: Function 'ActivateJob' argument 2 names different: declaration 'ActivatedAttendeeMask' definition 'JobAttendeeMask'.
+StatusType ActivateJob ( JobType JobId, CoreMask ActivatedAttendeeMask );
+                                                 ^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.c:174:50: note: Function 'ActivateJob' argument 2 names different: declaration 'ActivatedAttendeeMask' definition 'JobAttendeeMask'.
+StatusType ActivateJob ( JobType JobId, CoreMask JobAttendeeMask ) {
+                                                 ^
+pkg/arch/rh850/ee_rh850_hal.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 83 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/rh850/ee_rh850_hal_mc.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 80 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/rh850/ee_rh850_hal_mc.c:58:23: style: The scope of the variable 'all_exited' can be reduced. [variableScope]
+  OsEE_reg wait_mask, all_exited;
+                      ^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 28 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:263:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:264:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_SetChPeEn(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:275:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:263:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:264:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_SetChPeEn(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:275:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:263:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE1_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:264:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE1_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_SetChPeEn(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:275:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE1_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:263:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE2_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:264:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE2_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_SetChPeEn(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:275:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE2_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:263:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE3_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:264:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE3_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_SetChPeEn(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:275:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_HAS_SYSTEM_TIMER;OSEE_SYSTEM_TIMER_CORE3_DEVICE' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  R_IPIR_ClrChPeIntr(IPIR_CH_0, OSEE_CORE_ID_VALID_MASK);
+^
+pkg/arch/tricore/ee_tc_ctx.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 155 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/tricore/ee_tc_ctx.c:120:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, OS_CODE)
+^
+pkg/arch/tricore/ee_tc_hal.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 415 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:200:5: style: Same value in both branches of ternary operator. [duplicateValueTernary]
+    OSEE_TC_GPSR_SRC_OFFSET(OSEE_TC_GPSR_G, 0U), 1U);
+    ^
+pkg/arch/tricore/ee_hal_mc_internal.h:200:5: style: Unsigned expression '3U' can't be negative so it is unnecessary to test it. [unsignedPositive]
+    OSEE_TC_GPSR_SRC_OFFSET(OSEE_TC_GPSR_G, 0U), 1U);
+    ^
+pkg/arch/tricore/ee_tc_hal_mc.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 1437 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/tricore/ee_tc_intvec.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 1700 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/tricore/ee_tc_intvec.c:141:1: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+OSEE_ISR2_DEF(OSEE_CORE0_S, 0, OSEE_TC_CORE0_1_ISR_TID, 1)
+^
+pkg/arch/tricore/ee_tc_trapvec.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 209 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_MEMORY_PROTECTION;OSEE_TIMING_PROTECTION;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_MEMORY_PROTECTION;OSEE_USE_MMU;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_MEMORY_PROTECTION;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_ASS_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:100:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_ASS_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_ASS_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern void OSEE_TC_TRAP_ASS_TRAP(OsEE_tc_tin   tin);
+^
+pkg/arch/tricore/ee_tc_trapvec.c:380:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_ASS_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_ASS_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_ASS_TRAP(tin);
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_BUS_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:97:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_BUS_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_BUS_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern void OSEE_TC_TRAP_BUS_TRAP(OsEE_tc_tin   tin);
+^
+pkg/arch/tricore/ee_tc_trapvec.c:363:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_BUS_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_BUS_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_BUS_TRAP(tin)
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_CONT_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:94:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_CONT_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_CONT_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern void OSEE_TC_TRAP_CONT_TRAP(OsEE_tc_tin  tin);
+^
+pkg/arch/tricore/ee_tc_trapvec.c:343:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_CONT_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_CONT_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_CONT_TRAP(tin);
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_INST_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:91:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_INST_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_INST_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern void OSEE_TC_TRAP_INST_TRAP(OsEE_tc_tin  tin);
+^
+pkg/arch/tricore/ee_tc_trapvec.c:326:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_INST_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_INST_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_INST_TRAP(tin);
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_MMU_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:85:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_MMU_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_MMU_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern void OSEE_TC_TRAP_MMU_TRAP(OsEE_tc_tin   tin);
+^
+pkg/arch/tricore/ee_tc_trapvec.c:290:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_MMU_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_MMU_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_MMU_TRAP(tin);
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_NMI_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:425:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_NMI_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_NMI_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_NMI_TRAP(tin);
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_PROT_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:88:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_PROT_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_PROT_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern void OSEE_TC_TRAP_PROT_TRAP(OsEE_tc_tin  tin);
+^
+pkg/arch/tricore/ee_tc_trapvec.c:309:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_PROT_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_PROT_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_PROT_TRAP(tin);
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_SYS_TRAP;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/ee_tc_trapvec.c:103:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_SYS_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_SYS_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern void OSEE_TC_TRAP_SYS_TRAP(OsEE_tc_tin   tin);
+^
+pkg/arch/tricore/ee_tc_trapvec.c:409:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TC_TRAP_SYS_TRAP;__TASKING__' since the value of 'OSEE_TC_TRAP_SYS_TRAP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  OSEE_TC_TRAP_SYS_TRAP(tin);
+^
+pkg/arch/tricore/ee_hal_mc_internal.h:247:0: information: Skipping configuration 'OSEE_CORE_ID_VALID_MASK;OSEE_TIMING_PROTECTION;__TASKING__' since the value of 'OSEE_CORE_ID_VALID_MASK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+OSEE_TC_INT_SRB0 = OSEE_CORE_ID_VALID_MASK;
+^
+pkg/arch/tricore/examples/tricore_full_1/code.c:98:15: style: Condition 'stat==OSEE_TRIBOARD_2X5_LED_OFF' is always true [knownConditionTrueFalse]
+    if ( stat == OSEE_TRIBOARD_2X5_LED_OFF ) {
+              ^
+pkg/arch/tricore/examples/tricore_full_1/code.c:90:37: note: Assignment 'stat=OSEE_TRIBOARD_2X5_LED_OFF', assigned value is 1
+  enum OsEE_tc2x5_led_status stat = OSEE_TRIBOARD_2X5_LED_OFF;
+                                    ^
+pkg/arch/tricore/examples/tricore_full_1/code.c:98:15: note: Condition 'stat==OSEE_TRIBOARD_2X5_LED_OFF' is always true
+    if ( stat == OSEE_TRIBOARD_2X5_LED_OFF ) {
+              ^
+pkg/arch/tricore/no_iLLD/ee_tc_cstart.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 20 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_cstart.c:476:37: error: There is an unknown macro here somewhere. Configuration is required. If OSEE_S is a macro then please configure it. [unknownMacro]
+"\t.set __TRICORE_DERIVATE_NAME__," OSEE_S(__TRICORE_NAME__) "\n"
+                                    ^
+pkg/arch/tricore/no_iLLD/ee_tc_system.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 24 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_system.c:407:12: style: The scope of the variable 'fRef' can be reduced. [variableScope]
+  uint64_t fRef, fVco, fPllLeastError, fPllError;
+           ^
+pkg/arch/x86-64/bare/ee_x86_64_ioapic.c:83:11: style: The scope of the variable 'reg' can be reduced. [variableScope]
+ uint32_t reg, data;
+          ^
+pkg/arch/x86-64/bare/ee_x86_64_ioapic.c:83:16: style: The scope of the variable 'data' can be reduced. [variableScope]
+ uint32_t reg, data;
+               ^
+pkg/arch/x86-64/bare/ee_x86_64_memory_mgmt.c:105:23: style: The scope of the variable 'pt_entry' can be reduced. [variableScope]
+ OsEE_paddr pt_addr, *pt_entry, *pt;
+                      ^
+pkg/arch/x86-64/ee_pci.c:70:11: style: The scope of the variable 'vid' can be reduced. [variableScope]
+ uint16_t vid;
+          ^
+pkg/arch/x86-64/ee_pci.c:122:46: style:inconclusive: Function 'osEE_pci_find_cap' argument 2 names different: declaration 'capability' definition 'cap'. [funcArgNamesDifferent]
+int osEE_pci_find_cap(uint16_t bdf, uint16_t cap)
+                                             ^
+pkg/arch/x86-64/ee_pci.h:91:46: note: Function 'osEE_pci_find_cap' argument 2 names different: declaration 'capability' definition 'cap'.
+int osEE_pci_find_cap(uint16_t bdf, uint16_t capability);
+                                             ^
+pkg/arch/x86-64/ee_pci.c:122:46: note: Function 'osEE_pci_find_cap' argument 2 names different: declaration 'capability' definition 'cap'.
+int osEE_pci_find_cap(uint16_t bdf, uint16_t cap)
+                                             ^
+pkg/arch/x86-64/ee_pci.c:91:7: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+      OSEE_PCI_CONE | ((uint32_t)bdf << 8) | (addr & 0xfc));
+      ^
+pkg/arch/x86-64/ee_pci.c:108:7: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+      OSEE_PCI_CONE | ((uint32_t)bdf << 8) | (addr & 0xfc));
+      ^
+pkg/arch/x86-64/ee_pci.c:91:7: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+      OSEE_PCI_CONE | ((uint32_t)bdf << 8) | (addr & 0xfc));
+      ^
+pkg/arch/x86-64/ee_pci.c:108:7: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+      OSEE_PCI_CONE | ((uint32_t)bdf << 8) | (addr & 0xfc));
+      ^
+pkg/arch/x86-64/ee_x86_64_apic.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/x86-64/ee_x86_64_apic.c:100:6: style: Variable 'val' is reassigned a value before the old one has been used. [redundantAssignment]
+ val = lapic_read_reg(OSEE_X86_64_APIC_TPR) & ~OSEE_X86_64_APIC_TPR_MASK;
+     ^
+pkg/arch/x86-64/ee_x86_64_apic.c:97:6: note: val is assigned
+ val = lapic_read_reg(OSEE_X86_64_APIC_LDR);
+     ^
+pkg/arch/x86-64/ee_x86_64_apic.c:100:6: note: val is overwritten
+ val = lapic_read_reg(OSEE_X86_64_APIC_TPR) & ~OSEE_X86_64_APIC_TPR_MASK;
+     ^
+pkg/arch/x86-64/ee_x86_64_apic.c:196:11: style: The scope of the variable 'ticks' can be reduced. [variableScope]
+ uint64_t ticks;
+          ^
+pkg/arch/x86-64/ee_hal_internal.h:178:3: error: There is an unknown macro here somewhere. Configuration is required. If P2VAR is a macro then please configure it. [unknownMacro]
+  P2VAR(OsEE_TDB, AUTOMATIC, OS_APPL_CONST) p_from,
+  ^
+pkg/arch/x86-64/ee_x86_64_int.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/x86-64/ee_x86_64_int.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/x86-64/ee_x86_64_system_timer.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/x86-64/ee_x86_64_tsc.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/x86-64/ee_x86_64_x2apic.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 20 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/arch/x86-64/ee_x86_64_x2apic.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+pkg/arch/x86-64/examples/x86_64_full_benchmark/hal.h:69:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_IdleHook (void );
+^
+pkg/arch/x86-64/examples/x86_64_jailhouse_benchmark/hal.h:67:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, APPL_CODE) DemoHAL_Delay( VAR(MemSize, AUTOMATIC) interval );
+^
+pkg/arch/x86-64/intel_i210/intel_i210.c:286:6: style: Variable 'val' is reassigned a value before the old one has been used. [redundantAssignment]
+ val = 0;
+     ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:283:6: note: val is assigned
+ val &= ~(1 << 4); //single MSIX
+     ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:286:6: note: val is overwritten
+ val = 0;
+     ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:66:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_MDIC,
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:70:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  val = mmio_read32(devs[dev].bar_addr + E1000_MDIC);
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:79:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_MDIC,
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:81:11: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ while (!(mmio_read32(devs[dev].bar_addr + E1000_MDIC) & E1000_MDIC_READY))
+          ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:87:47: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.RDBAL(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_RDBAL(queue)));
+                                              ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:88:47: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.RDBAH(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_RDBAH(queue)));
+                                              ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:89:47: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.RDLEN(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_RDLEN(queue)));
+                                              ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:90:45: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.RDH(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_RDH(queue)));
+                                            ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:91:45: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.RDT(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_RDT(queue)));
+                                            ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:92:48: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.RXDCTL(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_RXDCTL(queue)));
+                                               ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:94:47: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TDBAL(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_TDBAL(queue)));
+                                              ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:95:47: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TDBAH(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_TDBAH(queue)));
+                                              ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:96:47: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TDLEN(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_TDLEN(queue)));
+                                              ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:97:45: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TDH(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_TDH(queue)));
+                                            ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:98:45: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TDT(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_TDT(queue)));
+                                            ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:99:48: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TXDCTL(%d): %x\n", dev, queue, mmio_read32(devs[dev].bar_addr + E1000_TXDCTL(queue)));
+                                               ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:107:36: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.CTRL:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_CTRL));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:108:40: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.CTRL_EXT:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_CTRL_EXT));
+                                       ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:109:38: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.STATUS:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_STATUS));
+                                     ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:110:36: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TCTL:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_TCTL));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:111:36: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.TIPG:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_TIPG));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:112:36: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.GPIE:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_GPIE));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:113:36: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.IVAR:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_IVAR));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:114:41: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.IVAR_MISC:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_IVAR_MISC));
+                                        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:115:36: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.EIMS:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_EIMS));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:116:36: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ OSEE_PRINT("%d.EICR:\t%x\n", dev, mmio_read32(devs[dev].bar_addr + E1000_EICR));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:121:8: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ val = mmio_read32(devs[dev].bar_addr + E1000_STATUS);
+       ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:130:8: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ val = mmio_read32(devs[dev].bar_addr + E1000_PCS_LCTL);
+       ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:155:6: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ if (mmio_read32(devs[dev].bar_addr + E1000_RAH) & E1000_RAH_AV) {
+     ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:156:27: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  *(u32 *)devs[dev].mac = mmio_read32(devs[dev].bar_addr + E1000_RAL);
+                          ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:157:33: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  *(u16 *)&(devs[dev].mac[4]) = mmio_read32(devs[dev].bar_addr + E1000_RAH);
+                                ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:186:8: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ val = mmio_read32(devs[dev].bar_addr + E1000_CTRL_EXT);
+       ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:193:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_CTRL_EXT, val);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:197:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  val = mmio_read32(devs[dev].bar_addr + E1000_PCS_LCTL);
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:200:3: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  mmio_write32(devs[dev].bar_addr + E1000_PCS_LCTL, val);
+  ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:204:3: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  mmio_write32(devs[dev].bar_addr + E1000_PHPM,
+  ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:209:8: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ val = mmio_read32(devs[dev].bar_addr + E1000_CTRL);
+       ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:219:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_CTRL, val);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:231:11: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ while (!(mmio_read32(devs[dev].bar_addr + E1000_STATUS) & E1000_STATUS_LU))
+          ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:248:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EITR_0, E1000_EITR_VALUE);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:249:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EITR_1, E1000_EITR_VALUE);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:250:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EITR_2, E1000_EITR_VALUE);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:251:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EITR_3, E1000_EITR_VALUE);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:252:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EITR_4, E1000_EITR_VALUE);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:267:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_IMS, 0xFFFFFFFF);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:268:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_ICS, 0xFFFFFFFF);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:270:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_IAM, 0xFFFFFFFF);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:272:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EIMS, 0x0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:273:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EICS, 0x0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:275:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EIAC, 0x0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:277:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EIAM, 0x0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:281:8: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ val = mmio_read32(devs[dev].bar_addr + E1000_GPIE);
+       ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:288:3: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  mmio_write32(devs[dev].bar_addr + E1000_GPIE, val);
+  ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:292:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_IVAR,
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:294:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_IVAR,
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:298:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_IVAR_MISC, (1 << 15));
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:299:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_IVAR_MISC,
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:303:3: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  mmio_write32(devs[dev].bar_addr + E1000_RXDCTL(i),
+  ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:312:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        mmio_write32(devs[dev].bar_addr + E1000_RDBAL(0), (unsigned long) &(devs[dev].rx_ring));
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:313:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        mmio_write32(devs[dev].bar_addr + E1000_RDBAH(0), 0);
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:314:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        mmio_write32(devs[dev].bar_addr + E1000_RDLEN(0), sizeof(devs[dev].rx_ring));
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:315:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        mmio_write32(devs[dev].bar_addr + E1000_RDH(0), 0);
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:316:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        mmio_write32(devs[dev].bar_addr + E1000_RDT(0), 0); // Overwritten below
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:319:8: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ val = mmio_read32(devs[dev].bar_addr + E1000_RCTL);
+       ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:325:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_RXDCTL(0),
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:329:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_RDT(0), RX_DESCR_NB - 1);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:332:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_RCTL, val);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:340:3: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  mmio_write32(devs[dev].bar_addr + E1000_TXDCTL(i),
+  ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:345:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TDBAL(0), (unsigned long) &(devs[dev].tx_ring));
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:346:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TDBAH(0), 0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:347:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TDLEN(0), sizeof(devs[dev].tx_ring));
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:348:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TDH(0), 0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:349:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TDT(0), 0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:352:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TXDCTL(0),
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:355:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TCTL, mmio_read32(devs[dev].bar_addr + E1000_TCTL) |
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:433:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_TDT(0), devs[dev].tx_idx);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:474:51: portability: '(void*)(d->rx_ring)[d->rx_idx].addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ memcpy(pkt, (void*) (d->rx_ring)[d->rx_idx].addr + bytes_to_drop, size);
+                                                  ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:480:9: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+        mmio_write32(devs[dev].bar_addr + E1000_RDT(0), idx);
+        ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:558:3: portability: 'devs[devs_nb].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  mmio_write32(devs[devs_nb].bar_addr + E1000_CTRL, E1000_CTRL_RST);
+  ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:559:12: portability: 'devs[devs_nb].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  while (!(mmio_read32(devs[devs_nb].bar_addr + E1000_STATUS) | E1000_STATUS_RST_DONE))
+           ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:155:52: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+ if (mmio_read32(devs[dev].bar_addr + E1000_RAH) & E1000_RAH_AV) {
+                                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:282:36: portability: Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned]
+ val |= ((1 << 0) | (1 << 30) | (1 << 31));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:155:52: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+ if (mmio_read32(devs[dev].bar_addr + E1000_RAH) & E1000_RAH_AV) {
+                                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:282:36: error: Signed integer overflow for expression '1<<31'. [integerOverflow]
+ val |= ((1 << 0) | (1 << 30) | (1 << 31));
+                                   ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:257:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_IAM, 0x0); //0
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:258:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EIAC, 0x1); // Setting auto clear for RX
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:259:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EIAM, 0x0);
+ ^
+pkg/arch/x86-64/intel_i210/intel_i210.c:263:2: portability: 'devs[dev].bar_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ mmio_write32(devs[dev].bar_addr + E1000_EIMS, 0x1);// Set interrupt for RX
+ ^
+pkg/common/utils/ee_assert.h:161:0: information: Skipping configuration 'ASSERT_LENGTH' since the value of 'ASSERT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+extern OSEE_TYPEASSERTVALUE osEE_assertions[ASSERT_LENGTH];
+^
+pkg/kernel/oo/ee_ar_sched_table.c:127:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(StatusType, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_alarm.c:104:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(StatusType, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_api_dynamic.c:82:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(StatusType, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_api_extension.c:129:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(StatusType, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_api_extension.c:82:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(StatusType, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_api_osek.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 77 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/kernel/oo/ee_oo_api_osek.c:78:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_counter.c:68:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_kernel.c:89:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_sched_entry_points.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+pkg/kernel/oo/ee_oo_sched_entry_points.c:186:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_sched_global.c:120:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(OsEE_bool, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_sched_partitioned.c:94:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(OsEE_bool, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_scheduler.c:217:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(OsEE_bool, OS_CODE)
+^
+pkg/kernel/oo/ee_oo_scheduler.c:92:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(OsEE_bool, OS_CODE)
+^
+pkg/std/arch/ee_std_hal_init.c:117:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(OsEE_bool, OS_CODE)
+^
+pkg/std/arch/ee_std_intrinsics.c:63:3: error: There is an unknown macro here somewhere. Configuration is required. If VAR is a macro then please configure it. [unknownMacro]
+  VAR(OsEE_rq_mask, AUTOMATIC) mask
+  ^
+pkg/std/kernel/ee_std_change_context.c:76:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, OS_CODE)
+^
+pkg/std/kernel/ee_std_change_context.c:97:1: error: There is an unknown macro here somewhere. Configuration is required. If FUNC is a macro then please configure it. [unknownMacro]
+FUNC(void, OS_CODE)
+^
+contrib/infineon/examples/tricore_isar_mcal_can/CanIf_Cbk.c:113:0: style: The function 'Appl_LPduRxCalloutFunction' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_can/CanIf_Cbk.c:95:0: style: The function 'CanIf_ControllerBusOff' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_can/CanIf_Cbk.c:103:0: style: The function 'CanIf_ControllerModeIndication' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_can/CanIf_Cbk.c:59:0: style: The function 'CanIf_RxIndication' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_can/CanIf_Cbk.c:74:0: style: The function 'CanIf_TxConfirmation' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.c:247:0: style: The function 'CommAndSchedule' is never used. [unusedFunction]
+
+^
+contrib/infineon/ISAR/src/Det.c:95:0: style: The function 'Det_Init' is never used. [unusedFunction]
+
+^
+contrib/infineon/ISAR/src/Det.c:86:0: style: The function 'Det_ReportError' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/examples/tricore_2G_mc/master.c:56:0: style: The function 'ErrorHook' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_fls/code.c:226:0: style: The function 'Fee_JobEndNotification' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_fls/code.c:231:0: style: The function 'Fee_JobErrorNotification' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.c:225:0: style: The function 'GetJobID' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_gpt/code.c:100:0: style: The function 'GptChannel_0_Notification' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_icu/code.c:66:0: style: The function 'IcuChannel_0_Notification' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_fee/code.c:224:0: style: The function 'NvM_JobEndNotification' is never used. [unusedFunction]
+
+^
+contrib/infineon/examples/tricore_isar_mcal_fee/code.c:225:0: style: The function 'NvM_JobErrorNotification' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:165:0: style: The function 'OSIF_GetMilliseconds' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:202:0: style: The function 'OSIF_MutexCreate' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:209:0: style: The function 'OSIF_MutexDestroy' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:187:0: style: The function 'OSIF_MutexLock' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:195:0: style: The function 'OSIF_MutexUnlock' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:279:0: style: The function 'OSIF_SemaCreate' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:289:0: style: The function 'OSIF_SemaDestroy' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:259:0: style: The function 'OSIF_SemaPost' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:216:0: style: The function 'OSIF_SemaWait' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:151:0: style: The function 'OSIF_TimeDelay' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_uart.c:54:0: style: The function 'OsEE_uart_init' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_uart.c:80:0: style: The function 'OsEE_uart_puts' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/examples/rh850_mc/src/r_peid0.c:162:0: style: The function 'R_PEID0_RunBckgrndHook' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/examples/rh850_mc/src/r_peid1.c:166:0: style: The function 'R_PEID1_RunBckgrndHook' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/examples/rh850_renesas_sc/src/r_prj.c:149:0: style: The function 'R_PRJ_FreeTask' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/examples/rh850_renesas_sc/src/r_prj.c:288:0: style: The function 'R_PRJ_RunBckgrndHook' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/kernel_k1/ee_api_k1.c:154:0: style: The function 'ReadyJob' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/examples/tricore_stack_monitoring/code.c:69:0: style: The function 'ShutdownHook' is never used. [unusedFunction]
+
+^
+pkg/arch/avr8/examples/arduino_isr_1/code.cpp:98:0: style: The function 'StartupHook' is never used. [unusedFunction]
+
+^
+contrib/nxp/src/ee3_s32sdk_osif.c:89:0: style: The function 'SysTick_Handler' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_cstart.c:501:0: style: The function '_START' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:168:0: style: The function '_do_master_pe' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:251:0: style: The function '_do_slave_pe' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_cstart.c:501:0: style: The function '_start' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_boot.c:72:0: style: The function 'arch_startup' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_libc_syscall.c:149:0: style: The function 'close' is never used. [unusedFunction]
+
+^
+contrib/fatfs/diskio/memory/ffmem.c:114:0: style: The function 'disk_initialize' is never used. [unusedFunction]
+
+^
+contrib/fatfs/diskio/memory/ffmem.c:187:0: style: The function 'disk_ioctl' is never used. [unusedFunction]
+
+^
+contrib/fatfs/diskio/memory/ffmem.c:128:0: style: The function 'disk_read' is never used. [unusedFunction]
+
+^
+contrib/fatfs/diskio/memory/ffmem.c:159:0: style: The function 'disk_write' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/examples/x86_64_xen_ethercat/main.c:89:0: style: The function 'ee_port_lock' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/examples/x86_64_xen_ethercat/main.c:97:0: style: The function 'ee_port_unlock' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/examples/x86_64_xen_ethercat/main.c:75:0: style: The function 'ee_usleep' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/intel_i210/intel_i210.c:452:0: style: The function 'eth_receive_packet' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/intel_i210/intel_i210.c:419:0: style: The function 'eth_send_packet' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/intel_i210/intel_i210.c:589:0: style: The function 'eth_setup_device' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/examples/tricore_2G_full_2/code.c:93:0: style: The function 'free_task1' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_libc_syscall.c:158:0: style: The function 'fstat' is never used. [unusedFunction]
+
+^
+contrib/fatfs/diskio/memory/ffmem.c:242:0: style: The function 'get_fattime' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/examples/tricore_2G_mc/master.c:84:0: style: The function 'idle_hook_core0' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/examples/tricore_2G_mc/slave1.c:51:0: style: The function 'idle_hook_core1' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/examples/tricore_2G_mc/slave2.c:51:0: style: The function 'idle_hook_core2' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/jailhouse/ee_x86_64_boot.c:60:0: style: The function 'inmate_main' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_ioapic.c:69:0: style: The function 'ioapic_read_reg' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_libc_syscall.c:168:0: style: The function 'isatty' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_libc_syscall.c:163:0: style: The function 'lseek' is never used. [unusedFunction]
+
+^
+pkg/common/utils/ee_assert.c:114:0: style: The function 'osEE_assert_and' is never used. [unusedFunction]
+
+^
+pkg/common/utils/ee_assert.c:90:0: style: The function 'osEE_assert_or' is never used. [unusedFunction]
+
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:221:0: style: The function 'osEE_cortex_r_initialize_system_timer' is never used. [unusedFunction]
+
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:272:0: style: The function 'osEE_cortex_r_system_timer_handler' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/ee_k1_irq.c:536:0: style: The function 'osEE_cpu_startos' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:428:0: style: The function 'osEE_hal_start_core' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:421:0: style: The function 'osEE_hal_sync_barrier' is never used. [unusedFunction]
+
+^
+pkg/arch/kalray_k1/ee_k1_cluster_boot.c:332:0: style: The function 'osEE_os_scall' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/ee_rh850_hal_mc.c:99:0: style: The function 'osEE_rh850_handle_ipir' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/ee_rh850_hal.c:52:0: style: The function 'osEE_rh850_isr2_wrapper' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:569:0: style: The function 'osEE_rh850_system_timer_handler' is never used. [unusedFunction]
+
+^
+pkg/arch/rh850/embark_g4mh/ee_rh850_embark_g4mh.c:540:0: style: The function 'osEE_rh850_system_timer_handler_wrapper' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_system.c:286:0: style: The function 'osEE_tc_initialize_system_timer' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_system.c:735:0: style: The function 'osEE_tc_stm_set_sr1' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_system.c:776:0: style: The function 'osEE_tc_stm_set_sr1_next_match' is never used. [unusedFunction]
+
+^
+pkg/arch/cortex-r/ti_awr16xx/ee_ti_awr16xx_system_timer.c:194:0: style: The function 'osEE_ti_awr16xx_get_frc' is never used. [unusedFunction]
+
+^
+pkg/arch/tricore/no_iLLD/ee_tc_system.c:208:0: style: The function 'osEE_tricore_system_timer_handler' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/ee_x86_64_apic.c:169:0: style: The function 'osEE_x86_64_int_send_eoi' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/ee_x86_64_apic.c:148:0: style: The function 'osEE_x86_64_int_send_ipi' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_ioapic.c:81:0: style: The function 'osEE_x86_64_ioapic_init' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_ioapic.c:106:0: style: The function 'osEE_x86_64_ioapic_setup_irq' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/ee_x86_64_apic.c:179:0: style: The function 'osEE_x86_64_oneshot_timer_init' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/ee_x86_64_apic.c:194:0: style: The function 'osEE_x86_64_timer_set_deadline' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/intel_i210/intel_i210.c:102:0: style: The function 'print_regs' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_libc_syscall.c:137:0: style: The function 'read' is never used. [unusedFunction]
+
+^
+pkg/arch/x86-64/bare/ee_x86_64_libc_syscall.c:108:0: style: The function 'sbrk' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
